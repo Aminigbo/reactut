@@ -1,23 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Header from './components/header';
+import Message from "./components/message";
+import Counter from './components/counter'
+import Parent from './components/parent';
+import List from './components/list';
+import Css from './components/css';
+import Forms from './components/Forms';
+import ButtonCounter from './components/ButtonCounter';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Header userId='101' title="Unbox" > 
+        <span>We will never let you down</span>
+      </Header> 
+
+       <Message /> 
+
+       <Counter /> 
+      
+       <Parent /> 
+
+       <List  /> 
+
+       <Css color= "green" /> 
+
+       <Forms /> 
+
+      <ButtonCounter />
     </div>
   );
 }
